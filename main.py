@@ -27,8 +27,8 @@ items = ['lion', 'witch', 'wardrobe']
 
 user_choice = input("Which item would you like to remove? ")
 
-if user_choice in items:
-    items.remove(user_choice)
+if (user_choice.lower()) in items:
+    items.remove(user_choice.lower())
     print(True)
 else:
     print(False)
